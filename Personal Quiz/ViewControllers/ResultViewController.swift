@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class ResultViewController: UIViewController {
     // 1. Массив ответов
     // 2. Определить наиболее часто встречаемый тип животного
@@ -45,7 +47,9 @@ class ResultViewController: UIViewController {
                 
                 resultsAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
                 resultDefinitionLabel.text = mostCommonAnswer.definition
-                rusultMostPopular.text = "Most popular result: \(frequentAnswersSorted.first!.key)!"
+                
+       
+                rusultMostPopular.text = "Most popular result: \(mostCommonAnswer.rawValue)!"
             }
     
     
