@@ -300,7 +300,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="obA-dn-7IH">
-                                <rect key="frame" x="20" y="181" width="280" height="206.5"/>
+                                <rect key="frame" x="20" y="195" width="280" height="178"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы – 🐶!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3z-kS-o91">
                                         <rect key="frame" x="50.5" y="0.0" width="179" height="60"/>
@@ -316,12 +316,6 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-kd-ASq">
                                         <rect key="frame" x="119.5" y="157.5" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most popular result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jy-ek-yR7">
-                                        <rect key="frame" x="66.5" y="186" width="147.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -347,7 +341,6 @@
                     <connections>
                         <outlet property="resultDefinitionLabel" destination="C3E-kd-ASq" id="eEE-Fj-U4U"/>
                         <outlet property="resultsAnswerLabel" destination="u3z-kS-o91" id="4cB-tz-qyn"/>
-                        <outlet property="rusultMostPopular" destination="4jy-ek-yR7" id="6d9-bM-Abd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59S-e1-idN" userLabel="First Responder" sceneMemberID="firstResponder"/>
