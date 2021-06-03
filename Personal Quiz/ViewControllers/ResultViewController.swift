@@ -26,8 +26,10 @@ class ResultViewController: UIViewController {
                 navigationItem.hidesBackButton = true
                 
             }
-            
-            func calculatePersonalityResult() {
+    
+    // MARK: - Calculate Result Methods
+    
+          func calculatePersonalityResult() {
                 var frequencyOfAnswers: [AnimalType: Int] = [:]
                 let responseTypes = answers.map{ $0.type }
                 
@@ -40,10 +42,10 @@ class ResultViewController: UIViewController {
                     return pair1.value > pair2.value
                 })
                 
-                let mostCommonAnswer = frequentAnswersSorted.first!.key
+                let mostCommonAnswer = frequentAnswersSorted.first?.key
                 
-                resultsAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
-                resultDefinitionLabel.text = mostCommonAnswer.definition
+                resultsAnswerLabel.text = "You are a \(String(describing: mostCommonAnswer!.rawValue))!"
+                resultDefinitionLabel.text = mostCommonAnswer!.definition
             }
     
     
