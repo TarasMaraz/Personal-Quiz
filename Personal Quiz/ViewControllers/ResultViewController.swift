@@ -26,9 +26,10 @@ class ResultViewController: UIViewController {
                 navigationItem.hidesBackButton = true
                 
             }
+}
     
-    // MARK: - Calculate Result Methods
-    
+    // MARK: - Private Methods
+    extension ResultViewController {
           func calculatePersonalityResult() {
                 var frequencyOfAnswers: [AnimalType: Int] = [:]
                 let responseTypes = answers.map{ $0.type }
